@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lecture 5 - HTML Forms</title>
+    <link rel="stylesheet" href="lecture5.css">
+    <style>
+      
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #00695c;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        article {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #00695c;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #00695c;
+            color: white;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 40%;  
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        form {
+            background-color: #e8f5e9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #00695c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #004d40;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-family: monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Web Technologies - Lecture 6</h1>
+        <p>HTML Forms	</p>
+    </header>
+
+    <article>
+        <section>
+            <h2>HTML Forms</h2>
+            <p>HTML forms allow users to submit data to a server for processing. Forms can contain various input elements such as text fields, radio buttons, checkboxes, and more.</p>
+        </section>
+
+        <section>
+            <img src="images/lecture6.png" alt="HTML Forms Diagram">
+        </section>
+
+        <section>
+            <h2>Form Attributes</h2>
+            <p>Form attributes define how the form behaves when submitted:</p>
+
+            <ul>
+                <li><strong>action</strong>: Specifies the URL where the form data will be sent.</li>
+                <li><strong>method</strong>: Defines the HTTP method (GET or POST) used to send data.</li>
+            </ul>
+
+            <p><strong>GET:</strong> Data is sent via the URL (suitable for small data).</p>
+            <p><strong>POST:</strong> Data is sent in the request body (for secure, large data).</p>
+
+            <h3>Example Form with Action and Method Attributes:</h3>
+            <pre>
+<code>
+&lt;form action="/submit" method="post"&gt;
+    &lt;!-- Form elements go here --&gt;
+&lt;/form&gt;
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>The <code>&lt;textarea&gt;</code> Element</h2>
+            <p>The <code>&lt;textarea&gt;</code> element allows for multi-line text input. It is useful for comments, messages, or descriptions.</p>
+
+            <h3>Example of a Textarea:</h3>
+            <pre>
+<code>
+&lt;form&gt;
+    &lt;textarea name="message" rows="4" cols="50"&gt;
+    Enter your message here...
+    &lt;/textarea&gt;
+&lt;/form&gt;
+</code>
+            </pre>
+
+            <h3>Example Form with Textarea:</h3>
+            <pre>
+<code>
+&lt;form action="/submit" method="post"&gt;
+    &lt;label for="message"&gt;Message:&lt;/label&gt;
+    &lt;textarea name="message" rows="4" cols="50"&gt;Enter your message here...&lt;/textarea&gt;
+    &lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+</code>
+            </pre>
+        </section>
+    </article>
+
+    <footer>
+        <p>Web Technologies Course - All Rights Reserved &copy; 2025</p>
+    </footer>
+
+</body>
+</html>

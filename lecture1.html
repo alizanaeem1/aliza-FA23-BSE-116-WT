@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lecture 1 - Introduction to Web Platforms</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #00695c;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+article {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #00695c;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #00695c;
+    color: white;
+}
+
+img {
+    display: block;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50px; 
+    height: 50px;
+    display: block;
+    margin: 0 auto 10px; 
+}
+
+.constraints {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.constraint-item {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px; 
+    width: 200px;
+    height: 150px;
+    position: relative;
+   
+}
+
+.constraint-item .inner-div {
+    background-color: white; 
+    padding: 20px;
+    border-radius: 10px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 80%;
+    height: 80%;
+}
+
+  </style>
+</head>
+<body>
+
+    <header>
+        <h1>Web Technologies - Lecture 1</h1>
+        <p style="font-weight: 300; font-size: larger;">Introduction to Web Platforms</p>
+    </header>
+
+    <article>
+        <section>
+            <h2>Definition of Web Platforms</h2>
+            <p>“Web platforms are digital environments or frameworks that allow users to interact with, develop, and deploy web-based applications and services.”</p>
+        </section>
+
+        <section>
+            <h2>Importance in Modern Technology</h2>
+            <p>Web platforms provide a structured way for developers to create, manage, and deliver content and functionality over the internet.</p>
+        </section>
+
+        <section>
+            <h2>Web Communication Protocol - HTTP</h2>
+            <h3>Definition of HTTP</h3>
+            <p>HTTP, or Hypertext Transfer Protocol, is a foundational protocol used for transmitting data over the web.</p>
+            <p>HTTP is the protocol used for transferring hypertext (text with links) and other resources between a web server and a web client (such as a browser).</p>
+        </section>
+
+        <section>
+            <h3>Role in Web Communication</h3>
+            <p>HTTP defines how messages are formatted and transmitted, and how web servers and browsers should respond to various commands.</p>
+        </section>
+
+        <section>
+            <h3>HTTP - Request and Response Cycle</h3>
+            <p>HTTP operates on a request-response model:</p>
+            <ul>
+                <li>Client (Browser) requests content from Server.</li>
+                <li>Server sends the requested content back to the Client in the form of a Response.</li>
+            </ul>
+        </section>
+
+       
+        <section>
+            <h3>Illustration of HTTP Request-Response Cycle</h3>
+            <img src="images/lecture1.png" alt="HTTP Request-Response Cycle" style="width: 60%; height: auto;">
+        </section>
+
+   
+        <section>
+            <h3>Legal and Ethical Constraints</h3>
+            <div class="constraints">
+                <div class="constraint-item">
+                    <div class="inner-div">
+                        <img src="images/p1.png" alt="Data Privacy Icon">
+                        <p>Data Privacy Laws</p>
+                    </div>
+                </div>
+                <div class="constraint-item">
+                    <div class="inner-div">
+                        <img src="images/p2.png" alt="Intellectual Property Icon">
+                        <p>Intellectual Property</p>
+                    </div>
+                </div>
+                <div class="constraint-item">
+                    <div class="inner-div">
+                        <img src="images/p3.png" alt="Ethical Considerations Icon">
+                        <p>Ethical Considerations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </article>
+
+    <footer>
+        <p>Web Technologies Course - All Rights Reserved &copy; 2025</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lecture 5 - Key Features of HTML5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #00695c;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        article {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #00695c;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #00695c;
+            color: white;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 40%;  
+            height: min-content;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .feature {
+           
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+  .constraints {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.constraint-item {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px; 
+    width: 200px;
+    height: 150px;
+    position: relative;
+   
+}
+
+.constraint-item .inner-div {
+    background-color: white; 
+    padding: 20px;
+    border-radius: 10px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 80%;
+    height: 80%;
+}
+      
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Web Technologies - Lecture 5</h1>
+        <p>Introduction to HTML5	</p>
+    </header>
+
+    <article>
+        <section>
+            <h2>Key Features of HTML5</h2>
+
+            <div class="feature">
+                <h3>Responsive Design</h3>
+                <p>Websites automatically adjust their layout and content based on the screen size, ensuring optimal viewing on devices like smartphones, tablets, and desktops.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Viewport Meta Tag</h3>
+                <p>The viewport meta tag ensures that websites scale correctly on different screens, making them mobile-friendly and responsive.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Flexible Multimedia</h3>
+                <p>HTML5 supports native multimedia (video and audio) without requiring third-party plugins like Flash, making it easier to embed media on a webpage.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Cross-Platform Compatibility</h3>
+                <p>HTML5 offers features such as the <code>&lt;canvas&gt;</code> element, which allows developers to build interactive and graphical content that works across multiple devices without requiring additional software.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Forms and Input Types</h3>
+                <p>HTML5 introduces new input types (like email, tel, date, etc.) that automatically adjust for different devices. For example, a <code>tel</code> input type would bring up a numeric keypad on a smartphone.</p>
+            </div>
+
+            <div class="feature">
+                <h3>The <code>&lt;section&gt;</code> Element</h3>
+                <p>The <code>&lt;section&gt;</code> element defines sections of a webpage, grouping related content. It is best for organizing thematic content, improving both readability and accessibility of the webpage.</p>
+            </div>
+        </section>
+        <section>
+    
+            <img src="images/lecture5.png" alt="HTML5 Features Diagram">
+        </section>
+         <section>
+            <h3 style="color: #00695c;">Multimedia in HTML5</h3>
+            <div class="constraints">
+                <div class="constraint-item">
+                    <div class="inner-div">
+                        <img src="images/p13.png" alt="html5">
+                        <p>HTML5 introduces native support for audio and video without plugins.
+</p>
+                    </div>
+                </div>
+                <div class="constraint-item">
+                    <div class="inner-div">
+                        <img src="images/p14.png" alt="elemnt">
+ <h3>Multimedia Elements: <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code></h3></p>
+                    </div>
+                </div>
+                <div class="constraint-item">
+                    <div class="inner-div">
+                        <img src="images/p15.png" alt="Eample">
+                        <p>Example (video)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+
+
+    <footer>
+        <p>Web Technologies Course - All Rights Reserved &copy; 2025</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lecture 2 - Categories of Web Applications and Web Architectures</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #00695c;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        article {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2, h3 {
+            color: #00695c;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #00695c;
+            color: white;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+      
+        .layered-architecture ul {
+            padding-left: 20px;
+        }
+          img {
+            max-width: 40%;  
+            height: max-content;
+            display: block;
+            margin: 20px auto;
+        }
+        
+.constraints {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.constraint-item {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px; 
+    width: 200px;
+    height: 150px;
+    position: relative;
+   
+}
+
+.constraint-item .inner-div {
+    background-color: white; 
+    padding: 20px;
+    border-radius: 10px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 80%;
+    height: 80%;
+}
+.inner-div p {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Web Technologies - Lecture 2</h1>
+        <p>Categories of Web Applications and Web Architectures</p>
+    </header>
+
+    <article>
+        <section>
+            <h2>Introduction</h2>
+            <p>Web applications use different structures to work efficiently and meet various needs. These structures, or architectures, help decide how the application is built, how it performs, and how well it can grow or handle complex tasks.</p>
+        </section>
+
+        <section>
+            <h2>Importance of Understanding Different Categories and Architectural Patterns</h2>
+            <p>Understanding different categories and architectural patterns is crucial for designing effective, scalable, and user-friendly web applications tailored to specific needs and constraints.</p>
+        </section>
+
+        <section>
+            <h2>Layered Architecture</h2>
+            <p>Layered architecture is a common pattern in web applications where the system is divided into layers, each handling a specific responsibility.</p>
+           
+                <h3>Structure:</h3>
+                <ul>
+                    <li><strong>Presentation Layer</strong>: Responsible for user interface and user interactions.</li>
+                    <li><strong>Business Logic Layer</strong>: Handles the core functionality, processing the user requests.</li>
+                    <li><strong>Data Layer</strong>: Manages the storage and retrieval of data.</li>
+                </ul>
+                <h3>Benefits:</h3>
+                <ul>
+                    <li><strong>Separation of Concerns</strong>: Divides the system into distinct sections, each handling a specific aspect of functionality.</li>
+                    <li><strong>Modularity</strong>: Allows for independent development and maintenance of each layer.</li>
+                    <li><strong>Scalability</strong>: Ensures that the system can handle increased loads or complexity effectively.</li>
+                </ul>
+                 <section>
+                <h3>Diagram of Layered Architecture</h3>
+                <img src="images/lecture2.png" alt="Layered Architecture Diagram">
+            </section>
+            <section>
+            <h3>Features of Document-Centric Apps</h3>
+            <div class="constraints">
+                <div class="constraint-item">
+                    <div class="inner-div">
+                        <img src="images/p4.png" alt="Real-time collaboration
+">
+                        <p>Real-time collaboration</p>
+                    </div>
+                </div>
+                <div class="constraint-item">
+                    <div class="inner-div">
+                        <img src="images/p5.png" alt="Version control
+">
+                        <p>Version control</p>
+                    </div>
+                </div>
+                <div class="constraint-item">
+                    <div class="inner-div">
+                        <img src="images/p6.png" alt="Ethical Considerations Icon">
+                        <p>Editing tools</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+    </article>
+
+    <footer>
+        <p>Web Technologies Course - All Rights Reserved &copy; 2025</p>
+    </footer>
+
+</body>
+</html>

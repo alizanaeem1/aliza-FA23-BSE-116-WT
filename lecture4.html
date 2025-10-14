@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 4 - Introduction to Div and Span</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+        .constraints {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.constraint-item {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px; 
+    width: 200px;
+    height: 150px;
+    position: relative;
+   
+}
+
+.constraint-item .inner-div {
+    background-color: white; 
+    padding: 20px;
+    border-radius: 10px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 80%;
+    height: 80%;
+}
+
+
+        header {
+            background-color: #00695c;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        article {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #00695c;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #00695c;
+            color: white;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 60%;  
+            height: max-content;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .div-section, .span-section {
+            padding: 20px;
+            background-color: #e8f5e9;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .div-section h3, .span-section h3 {
+            color: #00695c;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Web Technologies - Lecture 4</h1>
+        <p>Introduction to HTML	View
+4	Tables, Div, Span, and Layout Design in HTML</p>
+    </header>
+
+      
+
+    <article>
+        <section>
+            <h2>Introduction to HTML Layout</h2>
+            <div class="constraints">
+                <div class="constraint-item">
+                    <div class="inner-div">
+                        <img src="images/p10.png" alt="content">
+                        <p>HTML PROVIDES BASIC ELEMENTS FOR STRUCTURING WEB CONTENT.</p>
+                    </div>
+                </div>
+                <div class="constraint-item">
+                    <div class="inner-div">
+                        <img src="images/p11.png" alt="design">
+                        <p>FOCUS ON TABLES, DIV, AND SPANFOR LAYOUT DESIGN</p>
+                    </div>
+                </div>
+                <div class="constraint-item">
+                    <div class="inner-div">
+                        <img src="images/p12.png" alt="Elment">
+                        <p>THESE ELEMENTS HELP ORGANIZE CONTENT WITHIN A WEBPAGE.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 >Introduction to <code>&lt;div&gt;</code></h2>
+            <div class="div-section">
+                <p><code>&lt;div&gt;</code>: A block-level element used to group and structure content.</p>
+                <p>Used for creating sections of a webpage.</p>
+                <p>Unlike tables, <code>&lt;div&gt;</code> is better suited for flexible layout design.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Introduction to <code>&lt;span&gt;</code></h2>
+            <div class="span-section">
+                <p><code>&lt;span&gt;</code>: An inline element used to group text for styling.</p>
+                <p>Does not create a new block on the page.</p>
+                <p>Best for styling small sections of text.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2 >Table Attributes</h2>
+            <p>Table attributes in HTML are used to define how tables should be displayed and formatted. Attributes like <code>border</code>, <code>cellspacing</code>, and <code>cellpadding</code> affect the appearance of the table.</p>
+        </section>
+
+        <section>
+            <h2>Table Attributes Diagram</h3>
+            <img src="images/lecture4.png" alt="Table Attributes Diagram">
+        </section>
+
+    </article>
+
+    <footer>
+        <p>Web Technologies Course - All Rights Reserved &copy; 2025</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 3 - What is HTML?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #00695c;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        article {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #00695c;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #00695c;
+            color: white;
+        }
+
+        .content-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .content-div {
+            flex: 1;
+            padding: 20px;
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+        }
+
+        .div-1 {
+            background-color: #c35516; 
+        }
+
+        .div-2 {
+            background-color: #d0921d; 
+        }
+
+        .div-3 {
+            background-color:gray;
+        }
+          img {
+            max-width: 60%;  
+            height: max-content;
+            display: block;
+            margin: 20px auto;
+        }
+        .constraints {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.constraint-item {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px; 
+    width: 200px;
+    height: 150px;
+    position: relative;
+   
+}
+
+.constraint-item .inner-div {
+    background-color: white; 
+    padding: 20px;
+    border-radius: 10px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 80%;
+    height: 80%;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Web Technologies - Lecture 3</h1>
+        <p>Introduction to HTML</p>
+    </header>
+
+    <article>
+        <section>
+            <h2>What is HTML?</h2>
+            <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages, defining their structure and content using elements like text, images, and links.</p>
+        </section>
+
+        <section>
+            <h2>Markup Language</h2>
+            <p>A markup language is a computer language that uses tags to define elements within a document.</p>
+        </section>
+
+        <section>
+
+            <div class="content-row">
+                <div class="content-div div-1">
+                    <p>HTML stands for HyperText Markup Language.</p>
+                </div>
+                <div class="content-div div-2">
+                    <p>It is the standard language used to create webpages.</p>
+                </div>
+                <div class="content-div div-3">
+                    <p>HTML defines the structure of a webpage using elements and tags.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3 style="color:#00695c ;">History of HTML </h3>
+            <img src="images/leture3.png" alt="HTML History Timeline">
+        </section>
+
+        
+        <section>
+            <h3>Inline Elements</h3>
+            <div class="constraints">
+                <div class="constraint-item">
+                    <div class="inner-div">
+                        <img src="images/p7.png" alt="inline">
+                        <p style="font-weight: bold;">Inline elements do not start on a new line and only take as much width as necessary.
+</p>
+                    </div>
+                </div>
+            
+                <div class="constraint-item">
+                    <div class="inner-div">
+                        <img src="images/p9.png" alt="elements">
+                        <p  style="font-weight: bold;">Inline elements fit within block elements.
+</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <footer>
+        <p>Web Technologies Course - All Rights Reserved &copy; 2025</p>
+    </footer>
+
+</body>
+</html>
